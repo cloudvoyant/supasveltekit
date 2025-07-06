@@ -69,7 +69,7 @@
 		{/if}
 	</NavigationMenu.Root>
 	
-	<div class="flex-1 overflow-hidden">
+	<div class="flex-1 flex-col overflow-hidden content-center justify-center items-center">
 		<slot />
 	</div>
 </div>

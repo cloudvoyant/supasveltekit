@@ -7,8 +7,10 @@
 	<title>SupaKit</title>
 </svelte:head>
 
-<ScrollArea class="h-full items-center justify-center">
-	<div class="max-w-4xl text-center px-4 py-16">
+<ScrollArea class="h-full items-center flex flex-col justify-center content-center"	
+	viewportClasses="max-w-4xl"
+>
+	<div class="text-center px-4 py-16">
 		<!-- Hero Logo -->
 		<div class="mb-8 flex justify-center">
 			<img src="/svg/supakit-logo.svg" alt="SupaKit" class="h-24 w-24" />
@@ -55,7 +57,10 @@
 		<!-- Link to docs -->
 		<div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
 			<Button class="text-lg px-8 py-3">
-				<a href="/signup">Read The Docs</a>
+				<a href="https://github.com/cloudvoyant/supasveltekit" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2">
+					<img src="/svg/github-icon.svg" alt="GitHub" class="h-5 w-5" />
+					Read The Docs
+				</a>
 			</Button>
 		</div>
 	</div>
