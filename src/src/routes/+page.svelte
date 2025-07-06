@@ -1,28 +1,29 @@
 <script lang="ts">
 	import { Button } from "$lib/components/ui/button/index.js";
+	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
 </script>
 
 <svelte:head>
 	<title>SupaKit</title>
 </svelte:head>
 
-<div class="flex min-h-full flex-col items-center justify-center px-4 py-16">
-	<div class="mx-auto max-w-4xl text-center">
+<ScrollArea class="h-full items-center justify-center">
+	<div class="max-w-4xl text-center px-4 py-16">
 		<!-- Hero Logo -->
 		<div class="mb-8 flex justify-center">
 			<img src="/svg/supakit-logo.svg" alt="SupaKit" class="h-24 w-24" />
 		</div>
-
+	
 		<!-- Hero Title -->
 		<h1 class="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
 			Welcome to <span class="text-orange-600">SupaKit</span>
 		</h1>
-
+	
 		<!-- Hero Description -->
 		<p class="mb-8 text-lg leading-8 text-gray-600 sm:text-xl">
 			A feature-rich Sveltekit+Supabase starter template.
 		</p>
-
+	
 		<!-- Feature List -->
 		<div class="mb-10 grid grid-cols-1 gap-4 text-left sm:grid-cols-2 lg:grid-cols-3">
 			<div class="rounded-lg border p-4">
@@ -50,7 +51,7 @@
 				<p class="text-sm text-gray-600">For CI/CD</p>
 			</div>
 		</div>
-
+	
 		<!-- Link to docs -->
 		<div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
 			<Button class="text-lg px-8 py-3">
@@ -58,4 +59,7 @@
 			</Button>
 		</div>
 	</div>
-</div>
+
+</ScrollArea>
+<!-- <div class="h-full flex flex-col overflow-y-scroll">
+</div> -->

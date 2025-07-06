@@ -28,7 +28,7 @@
 	<title>SupaKit</title>
 </svelte:head>
 
-<div class="w-screen h-screen overflow-clip flex flex-col items-stretch">
+<div class="w-screen h-screen overflow-hidden flex flex-col items-stretch">
 	<NavigationMenu.Root class="px-2 py-1 border-b max-w-full flex-0 justify-start content-stretch">
 		<NavigationMenu.List>
 			<NavigationMenu.Item class="cursor-pointer">
@@ -69,7 +69,7 @@
 		{/if}
 	</NavigationMenu.Root>
 	
-	<div class="flex flex-col flex-1 overflow-clip">
+	<div class="flex-1 overflow-hidden">
 		<slot />
 	</div>
 </div>
